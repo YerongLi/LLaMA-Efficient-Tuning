@@ -1,0 +1,11 @@
+python src/train_bash.py \
+    --stage sft \
+    --model_name_or_path path_to_your_model \
+    --do_predict \
+    --dataset alpaca_gpt4_en \
+    --finetuning_type lora \
+    --checkpoint_dir path_to_checkpoint \
+    --output_dir path_to_predict_result \
+    --per_device_eval_batch_size 8 \
+    --max_samples 100 \
+    --predict_with_generate
